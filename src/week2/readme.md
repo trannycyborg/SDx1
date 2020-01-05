@@ -2,13 +2,11 @@
 
 [![edX](https://prod-edxapp.edx-cdn.org/static/edx.org/images/logo.790c9a5340cb.png)](https://courses.edx.org)
 
-In this assignment, we will show you the benefits of test driven development. You will produce two pieces of code: Squarelotron.java and SquarelotronTest.java.
+This assignment is intended to show the benefits of test driven development. The objective is to produce two pieces of code: Squarelotron.java and SquarelotronTest.java.
 
-This assignment deals with 2-dimensional arrays or matrices. They are not all that different from the 1-dimensional arrays that you saw in the video. Just think of them as an array of arrays.
+The primary object here are 2-dimensional arrays or matrices. 2D arrays are best visualized as a matrix.
 
-2D arrays are usually displayed similar to a matrix.
-
-For example to deal with the matrix below,
+An example of a 3 x 3 matrix below,
 
 1 2 3
 
@@ -16,7 +14,7 @@ For example to deal with the matrix below,
 
 7 8 9
 
-We provide the following code to help you understand 2-dimensional arrays:
+The following code is provided to help understand 2-dimensional arrays:
 ```sh
   int[][] myMatrix = new int[3][3]
   myMatrix[0][0] = 1;
@@ -42,7 +40,9 @@ for (int i = 0 ; i < 3; i++) {
 ## Squarelotron
 
 The main assignment deals with more array manipulations.
-We want you to program a bunch of operations for this object called a Squarelotron.
+There are inversions and rotational operations for the 2D array, which is the object called a Squarelotron.
+There is only one Squarelotron at a time to deal with, although multiple matrices or higher dimensional arrays 
+would be a great challenge.
 
 A Squarelotron consists basically of a matrix of numbers. This matrix can be decomposed as square rings which can flip independently in two different ways: Upside-Down and through the Main Diagonal.
 
