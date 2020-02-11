@@ -21,8 +21,8 @@ import java.util.*;
 public class Squarelotron {
   
         //instance variables
-              private int[][] squarelotron;
-              private int size;
+              int[][] squarelotron;
+              int size;
 
               /*This constructor fills the 2-dimensional array with
                * the numbers 1 to n squared, in order. It also sets 
@@ -30,10 +30,11 @@ public class Squarelotron {
               public Squarelotron(int n) {
                 size = n; //This will be the row and column length
                 int num = 1; //This is the first number in the array.
+                squarelotron= new int[n][n];
                 
                 //nested for loop to populate the array with numbers 1 to n.
-                for(int i = 0; i < n; i++) {
-                  for(int j = 0; j < n; j++) {
+                for(int i = 0; i < size; i++) {
+                  for(int j = 0; j < size; j++) {
                     squarelotron[i][j] = num;
                     num ++;
                   }
